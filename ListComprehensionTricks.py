@@ -20,8 +20,8 @@ words = ['deified', 'radar', 'guns']
 palindromes = [word for word in words if word == word[::-1]]
 
 # 3. Generators
-text = open("bigdata.txt", "r")
-lines = (line for line in text if line.startswith("2020-01-01"))
+# text = open("bigdata.txt", "r")
+# lines = (line for line in text if line.startswith("2020-01-01"))
 
 def average_line_length(lines):
 	num_lines = 0
@@ -31,5 +31,5 @@ def average_line_length(lines):
 		total_length += len(line)
 	return total_length / num_lines
 
-result = average_line_length(lines)
+# result = average_line_length(lines)
 
